@@ -1,21 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: normal;  
+}
+
+html {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+    background-image: url(/képek/hatter.jpg);
+}
+
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     align-items: center;
+    background-color: lightblue;
+    padding: 2rem;
+    
 }
 
 
 .gombok{
+    display: list-item;
+    justify-content: center;
+    text-align: center;
+    border: 32px;
+    font-size: 20px;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    background-color: deepskyblue;
+    list-style-type: none;
 
 }
 
 
 
 .tablazat{
-
+    width: 600px;
+    border-collapse: collapse;
+    gap: 1rem;
+    background-color: lightblue;
+}
+tr, td{
+    border-bottom: 1px solid black;
 }
 
 .szoveg{
+    display: block;
+    border-left: 1px solid black;
     
+}
+
+header{
+    text-align: center;
+    padding-top: 9rem;
+    background-image: url(/képek/fejlec.jpg);
+    height: 200px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
