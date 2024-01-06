@@ -1,0 +1,43 @@
+body {
+    margin: 30px;
+    background-color: #E9E9E9;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Adjust gap between columns */
+}
+
+.galery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjust gap between images */
+    max-height: 500px;
+    overflow: hidden; /* Remove scroll chance */
+}
+
+.galery img {
+    width: 100%;
+    max-width: 250px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    transform-origin: center; /* Set the origin of rotation */
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+/* Adjust the rotation */
+.galery .rotate_right {
+    transform: rotate(25deg);
+}
+
+.galery .rotate_left {
+    transform: rotate(-25deg);
+}
+
+/* On hover, enlarge the image */
+.galery img:hover {
+    transform: scale(1.1); /* Enlarge the image slightly */
+    z-index: 1; /* Set a higher z-index on hover for layering */
+}

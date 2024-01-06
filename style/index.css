@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(/kepek/hatter.jpg);
+  background-size: cover;
+}
+
+header {
+  background-image: url(/kepek/fejlec.jpg);
+  background-size: contain;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+.column {
+  float: left;
+  width: 75%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.larger {
+  grid-column: 2 / 3;
+}
+.container {
+  padding-top: 1rem;
+  display: block;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  background-color: white;
+}
+
+.table_fit {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+table,
+th,
+td {
+  border-bottom: 1px solid black;
+  padding: 8px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.blue {
+  background-color: lightblue;
+}
+
+a {
+  color: lightcoral;
+}
+
+.button a {
+  display: block;
+  padding: 8px 12px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #333;
+  background-color: lightblue;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  width: calc(100% - 24px);
+  box-sizing: border-box;
+}
+
+.button a:hover {
+  background-color: #e0e0e0;
+}
+
+.column.text {
+  border: 1px solid gray;
+  padding: 2rem;
+  padding-bottom: 6rem;
+  width: 100%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .column {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .larger {
+    grid-column: auto;
+    width: 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: lightblue;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+h2 {
+  margin: 0;
+}
